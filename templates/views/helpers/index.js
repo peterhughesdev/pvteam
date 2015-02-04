@@ -107,7 +107,7 @@ module.exports = function() {
 			if (autolink) {
 				return _.map(tags, function(tag) {
 					return linkTemplate({
-						url: ('/blog/' + tag.key),
+						url: ('/news/' + tag.key),
 						text: _.escape(tag.name)
 					});
 				}).join(separator);
@@ -216,18 +216,18 @@ module.exports = function() {
 	
 	// Direct url link to a specific post
 	_helpers.postUrl = function(postSlug, options) {
-		return ('/blog/post/' + postSlug);
+		return ('/news/post/' + postSlug);
 	};
 	
 	// might be a ghost helper
 	// used for pagination urls on blog
 	_helpers.pageUrl = function(pageNumber, options) {
-		return '/blog?page=' + pageNumber;
+		return '/news?page=' + pageNumber;
 	};
 	
 	// create the category url for a blog-category page
 	_helpers.categoryUrl = function(categorySlug, options) {
-		return ('/blog/' + categorySlug);
+		return ('/news/' + categorySlug);
 	};
 	
 	// ### Pagination Helpers
