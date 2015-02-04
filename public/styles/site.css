@@ -4809,15 +4809,47 @@ button.close {
  }
 
 #header {
-  margin-top: 30px; }
+  padding: 105px 0 35px;
+  background-attachment: fixed; }
+
+#header-bar {
+  height: 205px;
+  padding: 10px 0;
+  background: url('/images/header-bg.png'); }
+
+#navbar-nav {
+  background: none;
+  border: none; }
+
+.navbar {
+  min-height: 0;
+  border: none;
+  margin: 0 0 10px; }
+
+.navbar-nav li a {
+  padding: 0;
+  margin: 0 7px;
+  font-size: 22px;
+  color: #ffffff; }
+.navbar-nav li a:hover, .navbar-nav li .active {
+  background: none;
+  color: #fb8e67; }
+
+.member {
+  margin-top: 20px; }
+
+@media (min-width: 768px) {
+  .row {
+    position: relative; }
+
+  .bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+ }
 
 #footer {
   margin-top: 30px;
   border-top: 1px solid #eeeeee;
   padding-top: 30px;
   color: #777777; }
-
-.gallery-image img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
