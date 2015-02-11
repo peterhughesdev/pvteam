@@ -13,11 +13,14 @@ Page.add({
     },
     header : { 
         type : Types.LocalFile, 
-        allowedTypes : ['image/jpeg', 'image/png'],
-        dest:' ~/website/uploads/headers',
-        prefix : '/headers/',
+        dest : 'public/images/uploads/headers',
+        prefix : '/images/uploads/headers',
+        filename : function(page, filename) {
+            var suffix = filename.substr(filename.lastIndexOf('.'));
+            return page.title.toLowerCase() + '-header-' + Date.now() + suffix;
+        },
         format: function(item, file){
-            return '<img src="/headers/'+file.filename+'" style="max-width: 300px">'
+            return '<img src="/images/uploads/headers/'+file.filename+'" style="max-width: 300px">'
         }
     },
     body : { 

@@ -38,6 +38,22 @@ exports.initLocals = function(req, res, next) {
 	
 };
 
+/**
+ *
+ * Set the header image.
+ */
+exports.setHeader = function(req, res, next) {
+    var locals = res.locals;
+
+    if (locals.data.page && locals.data.page.header.filename) {
+        locals.data.header = '/images/uploads/headers/' + locals.data.page.header.filename; 
+    } else {
+        locals.data.header = 'http://i.imgur.com/Eourq.jpg';
+    }
+
+    next();
+};
+
 
 /**
 	Fetches and clears the flashMessages before a view is rendered
