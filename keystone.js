@@ -33,8 +33,11 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': '?NSZ~Q`Wi7{KN%+nzQ+"U]^-S$A&,`,b@&o/Oc8EcBLq;]#,mO)^p88P5BPHX>k^'
 
+	'cookie secret': '?NSZ~Q`Wi7{KN%+nzQ+"U]^-S$A&,`,b@&o/Oc8EcBLq;]#,mO)^p88P5BPHX>k^',
+
+    'wysiwyg images' : true,
+    'wysiwyg additional buttons' : 'searchreplace visualchars tr rtl pagebreak media  paste backcolor'
 });
 
 // Load your project's Models
