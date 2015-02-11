@@ -1,6 +1,14 @@
 // Override Bootstrap variables in this file, e.g.
-
-$font-size-base: 14px;
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
 
 $accent: #fb8e67;
+$brand-primary : $accent;
 
+
+$font-size-base: 14px;
+$font-base-colour : #37383a;
+
+$header-font : 'Bitter', serif;
+
+$headings-font-color : $font-base-colour;
+$headings-font-family : $header-font;

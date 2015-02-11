@@ -1,3 +1,9 @@
+h1, .section-heading {
+    padding : 0 0 10px; 
+    color : $font-base-colour;
+    background : url('/images/header-dot.png') repeat-x bottom left;
+}
+
 #header {
     padding: 105px 0 35px;
     background-attachment: fixed;
@@ -37,8 +43,13 @@
     }
 }
 
-.member { 
-    margin-top: 20px;
+.members-container {
+    margin: 0;
+    padding: 0;
+
+    .member { 
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 768px ) {
