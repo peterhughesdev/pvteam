@@ -21,7 +21,9 @@
 		
 	</head>
 	<body>
-    <div id="header" style="background-image: url('{{{data.header}}}');">            <div id="header-bar">
+       <div class="wrapper">
+           <div id="header" style="background-image: url('{{{data.header}}}');">
+               <div id="header-bar">
 			    <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -44,6 +46,7 @@
 				</div>
             </div>
 		</div>
+
 		<div id="body">
 			<!--
 				Flash messages allow you to display once-off status messages to users, e.g. form
@@ -74,17 +77,17 @@
 			</div>
 			{{/if}}
             {{{body}}}
+            <div class="push"></div>
 		</div>
+        </div>
         <div id="footer">
             <div class="container">
                 <div class="col-md-12">
-                    <ul class="nav navbar-nav navbar-right">
                     {{#if user}}
-                        <li><a href="/keystone/signout">Sign Out</a></li>
+                        <a href="/keystone/signout">Sign Out</a>
                     {{else}}
-                        <li><a href="/keystone/signin">Sign In</a></li>
+                        <a href="/keystone/signin">Sign In</a>
                     {{/if}}
-                    </ul>
                 </div>
             </div>
         </div>

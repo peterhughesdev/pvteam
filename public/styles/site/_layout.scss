@@ -1,3 +1,19 @@
+html, body  {
+    height : 100%;
+    margin : 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom : -$footer-height;
+
+    .push {
+        height : $footer-height;
+    }
+}
+
 h1, .section-heading {
     padding : 0 0 10px; 
     color : $font-base-colour;
@@ -49,6 +65,15 @@ h1, .section-heading {
 
     .member { 
         margin-top: 20px;
+
+        h2 {
+            margin-top : 0;
+            font-family : $font-family-sans-serif;
+        }
+
+        .member-profile {
+            border-radius : $border-radius-large;
+        }
     }
 }
 
@@ -65,9 +90,14 @@ h1, .section-heading {
 }
 
 #footer {
-	margin-top: 30px;
-	border-top: 1px solid $gray-lighter;
-	padding-top: 30px;
-	color: $gray-light;
+    width : 100%;
+    margin : 0;
+    height : $footer-height;
+    background : $accent;
+
+    a {
+        color: #fff;
+        font-size : $font-size-h6;
+    }
 }
 
