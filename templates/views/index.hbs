@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-9">
             <header>
                 <h1>About us</h1>
             </header>
@@ -9,15 +9,15 @@
             </div>
             
             <hr />
-            <h2>Recent news</h2>
+            <h2 class="section-heading">Recent news</h2>
             <div class="post">
                 <h3>{{{data.post.title}}}</h3>
                 {{{data.post.content.brief}}}
                 <p class="read-more"><a href="{{postUrl data.post.slug}}">Read more</a></p>
             </div>
         </div>
-        <div class="col-sm-12 col-md-4">
-
+        <div class="col-sm-12 col-md-3">
+            {{>sidebar}}
         </div>
     </div>
 </div>

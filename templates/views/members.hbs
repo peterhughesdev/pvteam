@@ -1,40 +1,43 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-8"> 
+        <div class="col-sm-12 col-md-9"> 
             <header>
                 <h1>{{data.page.title}}</h1>
             </header>
             <div class="post">
                 {{{data.page.body}}}
             </div>
-            {{# each data.members}}
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="sub-heading">{{{@key}}}</h2>
+            <div class="container-fluid members-container">
+                {{# each data.members}}
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="sub-heading">{{{@key}}}</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row members">
-                {{#each this}}
-                <div class="col-sm-12 col-md-6">
-                    <div class="media member">
-                        <div class="pull-left">
-                            <img class="media-object" src="/images/profile-blank.png" />
-                        </div>
-                        <div class="media-body">
-                            <h2>{{{name}}}</h2>
-                            {{#if job_title}}<p>{{{job_title}}}</p>{{/if}}
-                            {{#if location}}<p>{{{location}}}</p>{{/if}}
-                            {{#if email}}<p><a href="mailto:{{{email}}}">{{{email}}}</a></p>{{/if}}
-                            {{#if website}}<p><a href="{{{website}}}" target="_blank">{{{website}}}</a></p>{{/if}}
+                <div class="row members">
+                    {{#each this}}
+                    <div class="col-sm-12 col-md-6">
+                        <div class="media member">
+                            <div class="pull-left">
+                                <img class="media-object" src="/images/profile-blank.png" />
+                            </div>
+                            <div class="media-body">
+                                <h2>{{{name}}}</h2>
+                                {{#if job_title}}<p>{{{job_title}}}</p>{{/if}}
+                                {{#if location}}<p>{{{location}}}</p>{{/if}}
+                                {{#if email}}<p><a href="mailto:{{{email}}}">{{{email}}}</a></p>{{/if}}
+                                {{#if website}}<p><a href="{{{website}}}" target="_blank">{{{website}}}</a></p>{{/if}}
+                            </div>
                         </div>
                     </div>
+                    {{/each}}
                 </div>
                 {{/each}}
             </div>
-            {{/each}}
         </div>
-    </div>
-    <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-3">
+            {{>sidebar}}
+        </div>
 
     </div>
 </div>
