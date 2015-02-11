@@ -25,6 +25,18 @@ Member.add({
     },
     website : {
         type : Types.Url
+    },
+    image : {
+        type : Types.LocalFile,
+        dest : 'public/images/uploads/members',
+        prefix : '/images/uploads/members',
+        filename : function(member, filename) {
+            var suffix = filename.substr(filename.lastIndexOf('.'));
+            return 'member-profile-' + Date.now() + suffix; 
+        },
+        format : function(item, file) {
+            return '<img src="/images/uploads/members/' + file.filename + '" style="max-width: 300px">';
+        }
     }
 });
 

@@ -18,6 +18,11 @@ exports = module.exports = function(req, res) {
 	    Member.find()
               .sort('name')
               .exec(function(err, results) {
+                  results.forEach(function(member) {
+                      member.profileImage = member.image.filename ? 
+                                            '/images/uploads/members/' + member.image.filename :
+                                            '/images/profile-blank.png';
+                  });
 
                   // Group members based on organisation
                   locals.data.members = _.groupBy(results, 'organisation');
