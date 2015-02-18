@@ -25,6 +25,7 @@ var keystone = require('keystone'),
 // Common Middleware
 keystone.pre('routes', middleware.initLocals);
 keystone.pre('render', middleware.setHeader);
+keystone.pre('render', middleware.setPartners);
 keystone.pre('render', middleware.flashMessages);
 
 // Import Route Controllers
@@ -34,7 +35,11 @@ var routes = {
 
 // Setup Route Bindings
 exports = module.exports = function(app) {
-	
+
+    app.get('/keystone/js/common/:file', function(re, res) {
+        res.send("hi");
+    });
+
 	// Views
 	app.get('/news/category/:category?', routes.views.blog);	
     app.get('/news/post/:post', routes.views.post);
