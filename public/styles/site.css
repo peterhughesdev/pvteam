@@ -916,7 +916,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Bitter', serif;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit; }
   h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
@@ -4817,13 +4817,16 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
+  padding-bottom: 25px;
   margin-bottom: -20px; }
   .wrapper .push {
     height: 20px; }
 
 h1, .section-heading {
-  padding: 0 0 10px;
+  padding: 0 0 15px;
+  min-height: 55px;
   color: #37383a;
+  font-weight: 700;
   background: url('/images/header-dot.png') repeat-x bottom left; }
 
 #header {
@@ -4848,7 +4851,8 @@ h1, .section-heading {
   padding: 0;
   margin: 0 7px;
   font-size: 22px;
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: 'Bitter', serif; }
 .navbar-nav li a:hover, .navbar-nav li .active {
   background: none;
   color: #fb8e67; }
@@ -4864,10 +4868,36 @@ h1, .section-heading {
     .members-container .member .member-profile {
       border-radius: 6px; }
 
+.blog h2 a {
+  color: #37383a; }
+
+@media (max-width: 768px) {
+  .nav > li {
+    text-align: center; }
+ }
+
 @media (min-width: 768px) {
   .row {
     position: relative; }
+ }
 
+@media (max-width: 992px) {
+  #header {
+    padding-top: 35px; }
+
+  #header-bar {
+    height: auto; }
+
+  .navbar {
+    margin: 10px 0 0; }
+
+  .nav > li {
+    float: left;
+    width: 50%;
+    margin: 10px 0; }
+ }
+
+@media (min-width: 992px) {
   .bottom-align-text {
     position: absolute;
     bottom: 0;

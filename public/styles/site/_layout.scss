@@ -7,6 +7,8 @@ html, body  {
     min-height: 100%;
     height: auto !important;
     height: 100%;
+
+    padding-bottom : 25px; 
     margin-bottom : -$footer-height;
 
     .push {
@@ -15,8 +17,10 @@ html, body  {
 }
 
 h1, .section-heading {
-    padding : 0 0 10px; 
+    padding : 0 0 15px;
+    min-height : 55px;
     color : $font-base-colour;
+    font-weight : $headings-font-weight;
     background : url('/images/header-dot.png') repeat-x bottom left;
 }
 
@@ -50,6 +54,7 @@ h1, .section-heading {
             margin: 0 7px;
             font-size: 22px;
             color: #ffffff; 
+            font-family : $headings-font-family;
         }
 
         a:hover, .active  {
@@ -77,11 +82,45 @@ h1, .section-heading {
     }
 }
 
-@media (min-width: 768px ) {
+.blog {
+    h2 a {
+        color : $font-base-colour;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav > li {
+        text-align : center;
+    }
+}
+
+@media (min-width: 768px) {
     .row {
         position: relative;
     }
+}
 
+@media (max-width: 992px) {
+    #header {
+        padding-top : 35px;
+    }
+
+    #header-bar {
+        height : auto;
+    }
+
+    .navbar {
+        margin : 10px 0 0;
+    }
+
+    .nav > li {
+        float : left;
+        width : 50%;
+        margin : 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
     .bottom-align-text {
         position: absolute;
         bottom: 0;
