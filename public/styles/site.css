@@ -4867,6 +4867,8 @@ h1, .section-heading {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     .members-container .member .member-profile {
       border-radius: 6px; }
+  .members-container .partner {
+    margin: 14px 0; }
 
 .blog h2 a {
   color: #37383a; }

@@ -24,6 +24,11 @@ Partner.add({
         format : function(item, file) {
             return '<img src="/images/uploads/partners/' + file.filename + '" style="max-width: 300px;">';
         }
+    },
+    blurb : {
+        type : Types.Html,
+        wysiwyg : true,
+        height : 400
     }
 });
 

@@ -1,6 +1,7 @@
 var keystone = require('keystone');
 var Page = keystone.list('Page').model;
 var Member = keystone.list('Member').model;
+var Partner = keystone.list('Partner').model;
 
  var _ = require('underscore');
 
