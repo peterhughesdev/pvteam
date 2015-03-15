@@ -14,10 +14,13 @@ Member.add({
     order : {
         type : Types.Number
     },
-    organisation : {
+    /*organisation : {
         type : Types.Relationship,
         ref : 'MemberOrganisation',
         many : false
+    }*/,
+    organisation : {
+        Type : Text
     },
     job_title : {
         type : Types.Text,
