@@ -8,14 +8,14 @@
                 {{{data.page.body}}}
             </div>
             <div class="container-fluid members-container">
-                {{# each data.members}}
+                {{# each data.organisations}}
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="sub-heading">{{{@key}}}</h2>
+                        <h2 class="sub-heading">{{{name}}}</h2>
                     </div>
                 </div>
                 <div class="row members">
-                    {{#each this}}
+                    {{#each members}}
                     <div class="col-sm-12 col-md-6">
                         <div class="media member">
                             <div class="pull-left">
