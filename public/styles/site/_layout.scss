@@ -80,6 +80,7 @@ h1, .section-heading {
         margin-top: 20px;
 
         h2 {
+            font-size : 20px;
             margin-top : 0;
             font-family : $font-family-sans-serif;
         }
@@ -91,6 +92,15 @@ h1, .section-heading {
 
     .partner {
         margin: 14px 0;
+    }
+}
+
+.partner-logo {
+    display : block;
+    margin : 10px 0;
+
+    .img {
+        width : 200px;
     }
 }
 

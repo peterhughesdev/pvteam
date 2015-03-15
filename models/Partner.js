@@ -29,6 +29,9 @@ Partner.add({
         type : Types.Html,
         wysiwyg : true,
         height : 400
+    },
+    member : {
+        type : Types.Boolean
     }
 });
 
