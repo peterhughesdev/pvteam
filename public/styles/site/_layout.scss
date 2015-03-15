@@ -17,6 +17,7 @@ html, body  {
 }
 
 h1, .section-heading {
+    font-size : 33px;
     padding : 0 0 15px;
     min-height : 55px;
     color : $font-base-colour;
@@ -24,14 +25,17 @@ h1, .section-heading {
     background : url('/images/header-dot.png') repeat-x bottom left;
 }
 
+.sidebar-heading {
+    font-weight : normal;
+}
+
 #header {
-    padding: 105px 0 35px;
+    padding: 35px 0 35px;
     background-attachment: fixed;
 }
 
 #header-bar {
-    height: 205px;
-    padding: 10px 0;
+    padding: 20px 0;
     background: url('/images/header-bg.png');
 }
 
@@ -44,7 +48,7 @@ h1, .section-heading {
 .navbar {
     min-height: 0;
     border: none;
-    margin: 0 0 10px;
+    margin: 0;
 }
 
 .navbar-nav {
@@ -52,7 +56,7 @@ h1, .section-heading {
         a {
             padding: 0;
             margin: 0 7px;
-            font-size: 22px;
+            font-size: 20px;
             color: #ffffff; 
             font-family : $headings-font-family;
         }
@@ -67,6 +71,10 @@ h1, .section-heading {
 .members-container {
     margin: 0;
     padding: 0;
+
+    .members { 
+        margin-bottom: 25px;
+    }
 
     .member { 
         margin-top: 20px;
