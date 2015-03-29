@@ -14,7 +14,7 @@ exports = module.exports = function(req, res) {
 		locals = res.locals;
 	
 	// Set locals
-	locals.section = 'page';
+	locals.section = 'members';
     locals.data = {};
 
 

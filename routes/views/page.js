@@ -8,7 +8,6 @@ exports = module.exports = function(req, res) {
     req.params.page = req.params.page || 'index';
 
 	// Set locals
-	locals.section = 'page';
 	locals.filters = {
 		page : req.params.page
 	};
@@ -21,6 +20,7 @@ exports = module.exports = function(req, res) {
 			slug: locals.filters.page
         }).exec(function(err, page) {
             locals.data.page = page;
+            locals.section = page.title.toLowerCase();
             next(err);
         });
 	});

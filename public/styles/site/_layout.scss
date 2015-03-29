@@ -65,10 +65,11 @@ h1, .section-heading {
             font-family : $headings-font-family;
         }
 
-        a:hover, .active  {
+        a:hover, .active {
             background: none;
             color: $accent;
         }
+        
     }
 }
 

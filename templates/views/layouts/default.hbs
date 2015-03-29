@@ -34,8 +34,8 @@
 					            <div class="navbar">
 						            <ul class="nav navbar-nav navbar-right">
 								    {{# each navLinks}}
-							   	        <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-									        <a href="{{ href }}">{{ label }}</a>
+                                        <li>
+                                            <a href="{{href}}" {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>{{label}}</a>
 								        </li>
 							        {{/each}}
 						            </ul>
