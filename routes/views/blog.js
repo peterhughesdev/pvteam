@@ -75,6 +75,7 @@ exports = module.exports = function(req, res) {
 		
 		q.exec(function(err, results) {
 			locals.data.posts = results;
+            locals.data.plural = results.length === 1;
 			next(err);
 		});
 		
