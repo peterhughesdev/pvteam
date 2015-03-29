@@ -17,7 +17,7 @@ keystone.init({
 	
 	'sass': 'public',
 	'static': 'public',
-	'favicon': 'public/favicon.ico',
+	'favicon': 'public/favicon.png',
 	'views': 'templates/views',
 	'view engine': 'hbs',
 	

@@ -4841,7 +4841,7 @@ h1, .section-heading {
   background-attachment: fixed; }
 
 #header-bar {
-  padding: 20px 0;
+  padding: 40px 0 20px;
   background: url('/images/header-bg.png'); }
 
 #navbar-nav {
