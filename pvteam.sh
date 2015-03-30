@@ -1,10 +1,10 @@
 #!/bin/sh
 
-#WEBSITE_DIR=/home/jw9863/website/pvteam
-WEBSITE_DIR=/Users/Peter/Dev/Projects/pvteam
+WEBSITE_DIR=/home/jw9863/website/pvteam
+#WEBSITE_DIR=/Users/Peter/Dev/Projects/pvteam
 
-#LOG_DIR=/home/jw9863/website/logs
-LOG_DIR=/Users/Peter/Dev/Projects/pvteam-logs
+LOG_DIR=/home/jw9863/website/logs
+#LOG_DIR=/Users/Peter/Dev/Projects/pvteam-logs
 
 export NODE_ENV=production
 export PORT=3000
