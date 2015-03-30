@@ -34,6 +34,8 @@ keystone.init({
 	'auth': true,
 	'user model': 'User',
 
+    'session store' : 'mongo',
+
 	'cookie secret': '?NSZ~Q`Wi7{KN%+nzQ+"U]^-S$A&,`,b@&o/Oc8EcBLq;]#,mO)^p88P5BPHX>k^',
 
     'wysiwyg images' : true,
